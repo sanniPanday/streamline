@@ -16,7 +16,6 @@ const images = [
 export default function ProSlider() {
   return (
     <div className="bg-gray-900 text-white py-10 overflow-hidden">
-      {/* Heading Section */}
       <div className="text-center mb-8 px-4">
         <h2 className="text-3xl md:text-4xl font-semibold mb-3">
           A Simple, Secure Experience
@@ -28,7 +27,6 @@ export default function ProSlider() {
         </p>
       </div>
 
-      {/* Swiper Slider */}
       <div className="max-w-6xl mx-auto px-4 relative overflow-visible">
         <Swiper
           modules={[Navigation, Pagination]}

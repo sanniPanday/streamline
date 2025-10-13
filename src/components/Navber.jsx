@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import img from "../assets/image/1.png";
 import button1 from "../assets/image/cont.svg";
+import { Link } from "react-router-dom";
 function Navber() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -24,7 +25,11 @@ function Navber() {
       <div className="max-w-7xl mx-auto flex items-center justify-between py-3 px-4">
        
         <div className="flex items-center space-x-2">
-          <img src={img} alt="Logo" className="w-[60px] h-[64px] object-contain" />
+        <Link to="/" className="ml-2">
+         <img src={img} alt="Logo" className="w-[60px] h-[64px] object-contain" />
+        </Link>
+        
+          {/* <img src={img} alt="Logo" className="w-[60px] h-[64px] object-contain" /> */}
         </div>
 
        

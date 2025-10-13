@@ -29,16 +29,16 @@ const benefits = [
 
 const BenefitsSection = () => {
   return (
-    <div className="lg:min-h-screen  px-4 py-12 md:px-16 bg-gradient-to-br from-[#161616] via-[#575656] to-[#0A0A0A] text-white">
+    <div className="lg:min-h-screen  px-4 py-24 md:px-16 bg-gradient-to-br from-[#161616] via-[#575656] to-[#0A0A0A] text-white">
       <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold mb-2">Key benefits for adjuster</h2>
+        <h2 className="text-3xl md:text-4 mb-2 lg:text-[48px] font-bold leading-[140%] tracking-normal font-thicccboi">Key benefits for adjuster</h2>
         <p className="text-gray-300">Designed to save adjusters time, reduce stress, and maximize efficiency.</p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {benefits.map((item, index) => (
           <div
             key={index}
-            className="w-full max-w-[411px] h-[196px] mx-auto bg-gradient-to-b from-black/90 to-green-400 border-2 border-gray-600 rounded-[20px] p-6 shadow-md"
+            className="w-full max-w-[411px] h-[196px] mx-auto bg-gradient-to-b from-black/90 to-green-900 border-2 border-gray-600 rounded-[20px] p-6 shadow-md"
           >
             <h3 className="text-xl  mb-4 mt-4 font-poppins font-medium lg:text-[24px] leading-[100%] tracking-[0px] text-center">{item.title}</h3>
             <p className="text-sm px-4 text-white font-poppins font-normal text-[14px] leading-[24px] tracking-[0px] text-center">{item.description}</p>

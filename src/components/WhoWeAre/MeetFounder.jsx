@@ -7,16 +7,16 @@ export default function MeetFounder() {
       className="lg:min-h-screen text-white py-16 px-4 sm:px-6 md:px-12"
       style={{
         background:
-          "linear-gradient(0deg, #52B7E0, #52B7E0), linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8))",
+          "linear-gradient(0deg, #52B7E0, #52B7E0), linear-gradient(0deg, rgba(01,0,0,0.8), rgba(0,0,0,0.8))",
       }}
     >
       <div className="max-w-5xl mx-auto text-center mb-10">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl  font-thicccboi font-bold lg:text-[48px] leading-[100%] text-center">
           Meet the founder
         </h2>
       </div>
 
-     <div className="bg-gradient-to-r from-[#11262b] to-[#2a3636] rounded-2xl overflow-hidden flex flex-col md:flex-col lg:flex-row shadow-lg items-center lg:items-start">
+     <div className="bg-gradient-to-r from-[#11262b] to-[#050a0a] rounded-2xl overflow-hidden flex flex-col md:flex-col lg:flex-row shadow-lg items-center lg:items-start">
   
   
   <div className="w-full lg:w-2/3 flex justify-center lg:justify-start">
@@ -28,14 +28,14 @@ export default function MeetFounder() {
   </div>
 
   
-  <div className="flex-2 px-4 sm:px-6 md:px-8 lg:px-12 flex flex-col justify-center text-center md:text-center lg:text-start mt-6 md:mt-6 lg:mt-20">
+  <div className="flex-2 px-4 sm:px-6 md:px-8 lg:px-7 flex flex-col justify-center text-center md:text-center lg:text-start mt-6 md:mt-6 lg:mt-20">
     <h3 className="text-lg sm:text-xl md:text-2xl font-semibold">
       Kevin Sodke
     </h3>
-    <p className="text-sm sm:text-base text-gray-300 mb-3">
+    <p className="text-sm sm:text-base text-gray-300 mb-10">
       Founder & CEO
     </p>
-    <p className="text-gray-300 font-thicccboi font-normal text-[16px] sm:text-[18px] md:text-[18px] leading-[140%] tracking-[0]">
+    <p className="text-gray-300 font-thicccboi font-normal lg:text-[18px] md:text-[18px] leading-[140%] tracking-[0]">
       30+ years in construction and 20 years as an insurance adjuster. Builds
       tools that actually fit the work. 30+ years in construction and 20 years
       as an insurance adjuster. Builds tools that actually fit the work. 30+

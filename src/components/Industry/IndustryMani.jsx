@@ -1,9 +1,10 @@
 import React from 'react'
+import Industrypage from './Industrypage'
 
 function IndustryMani() {
   return (
     <div>
-      svljh
+     <Industrypage/>
     </div>
   )
 }

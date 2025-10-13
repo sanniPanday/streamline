@@ -5,15 +5,15 @@ const WeAre = () => {
 
   return (
     <section
-      className="bg-gray-900 text-white py-16 px-6 md:px-12 lg:px-24"
+      className="bg-gray-900 text-white py-32 px-6 md:px-12 lg:px-24"
       style={{
         background:
           "linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), linear-gradient(0deg, #52B7E0, #52B7E0)",
       }}
     >
-      <div className="text-center max-w-3xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">Who We Are</h2>
-        <p className="text-gray-300 mb-6 text-md">
+      <div className="text-center  mx-auto">
+        <h2 className="text-3xl md:text-4xl mb-6 font-bricolage font-bold lg:text-[70px] lg:leading-[91px] text-center">Who We Are</h2>
+        <p className="text-gray-300 mb-6  font-poppins font-normal text-[20px] leading-[140%] text-center">
           At Streamline Factory, we build smart software that solves real-world
           problems. From inspection routing to remote repair support, our SaaS
           platforms are built for impact.
@@ -67,7 +67,7 @@ const WeAre = () => {
   <h3 className="text-3xl md:text-3xl lg:text-[48px] mb-4 font-bold leading-[140%] tracking-[0] text-center lg:text-start">
     Our mission - message from founder
   </h3>
-  <p className= "  ml-0 lg:-ml-24 text-gray-300 px-0 md:px-10 lg:px-24 text-center lg:text-start text-md font-light lg:text-[24px] leading-[140%] tracking-[-0.0112em]">
+  <p className= "    text-gray-300 px-0 md:px-10 lg:px-0 text-center lg:text-start text-md font-light lg:text-[24px] leading-[140%] ">
     At Streamline Factory, we believe complex work should be simple. After
     years in industries weighed down by inefficiency, we set out to create
     software that takes the stress out of everyday tasks. Our mission is

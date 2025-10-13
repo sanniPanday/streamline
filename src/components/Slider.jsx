@@ -92,9 +92,9 @@ const settings = {
 
         <SlickSlider ref={sliderRef} {...settings}>
           {testimonials.map((t, i) => (
-            <div key={i} className="px-4">
+            <div key={i} className="px-4 ">
               
-              <div className="h-[272px]  sm:h-[252px] w-[500px] sm:w-  md:w-[320px] lg:w-full bg-gradient-to-br from-green-900 to-gray-900 rounded-xl p-6 shadow-lg">
+              <div className="lg:h-[272px]   lg:w-[560px] bg-gradient-to-br from-green-900 to-gray-900 rounded-xl p-6 shadow-lg">
                 <div className="flex items-center mb-8 mt-5">
                   <img
                     src={t.img}
