@@ -1,19 +1,23 @@
 import React, { useState } from "react";
-
+import bg from "../../assets/image/bg.png"
 const WeAre = () => {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
 
   return (
-    <section
-      className="bg-gray-900 text-white py-32 px-6 md:px-12 lg:px-24"
-      style={{
-        background:
-          "linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), linear-gradient(0deg, #52B7E0, #52B7E0)",
-      }}
-    >
-      <div className="text-center  mx-auto">
-        <h2 className="text-3xl md:text-4xl mb-6 font-bricolage font-bold lg:text-[70px] lg:leading-[91px] text-center">Who We Are</h2>
-        <p className="text-gray-300 mb-6  font-poppins font-normal text-[20px] leading-[140%] text-center">
+   <section className="relative bg-gray-900 py-32 px-6 md:px-12 lg:px-24 text-white">
+      <div className="absolute inset-0 flex justify-center">
+        <img
+          src={bg}
+          alt="Background"
+          className="w-[570px] h-[500px] object-cover opacity-90 mt-0"
+        />
+        <div className="absolute inset-0 bg-gray-900/70"></div>
+      </div>
+      <div className="text-center  mx-auto relative z-10 ">
+        <h3 className="text-3xl md:text-4xl lg:text-[70px] lg:leading-[91px] font-bricolage font-bold mb-6 text-white">
+          Who We Are
+        </h3>
+        <p className=" text-gray-300 mb-6  font-poppins font-normal text-[20px] leading-[140%] text-center">
           At Streamline Factory, we build smart software that solves real-world
           problems. From inspection routing to remote repair support, our SaaS
           platforms are built for impact.
@@ -63,18 +67,18 @@ const WeAre = () => {
         )}
       </div>
 
-      <div className="mt-16 mx-auto text-center lg:text-start">
-  <h3 className="text-3xl md:text-3xl lg:text-[48px] mb-4 font-bold leading-[140%] tracking-[0] text-center lg:text-start">
-    Our mission - message from founder
-  </h3>
-  <p className= "    text-gray-300 px-0 md:px-10 lg:px-0 text-center lg:text-start text-md font-light lg:text-[24px] leading-[140%] ">
-    At Streamline Factory, we believe complex work should be simple. After
-    years in industries weighed down by inefficiency, we set out to create
-    software that takes the stress out of everyday tasks. Our mission is
-    to give professionals the tools they need to save time, cut through
-    clutter, and focus on what really matters — results.
-  </p>
-</div>
+      <div className=" relative z-10  mt-16 mx-auto text-center lg:text-start">
+        <h4 className="text-3xl md:text-3xl lg:text-[48px] mb-4 font-bold leading-[140%] tracking-[0] text-center lg:text-start">
+          Our mission - message from founder
+        </h4>
+        <p className="text-gray-300 px-0 md:px-10 lg:px-0 text-center lg:text-start text-md font-light lg:text-[24px] leading-[140%] ">
+          At Streamline Factory, we believe complex work should be simple. After
+          years in industries weighed down by inefficiency, we set out to create
+          software that takes the stress out of everyday tasks. Our mission is
+          to give professionals the tools they need to save time, cut through
+          clutter, and focus on what really matters — results.
+        </p>
+      </div>
     </section>
   );
 };

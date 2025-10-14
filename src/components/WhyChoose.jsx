@@ -7,13 +7,12 @@ import bgw from "../assets/image/bg.png";
 
 function WhyChoose() {
   return (
-    <section className="relative py-16 px-6 md:px-12 bg-gray-900 overflow-hidden">
-      <div
-        className="absolute inset-0 z-0 bg-center ml-96 bg-cover h-[400px] w-[500px]"
-        style={{ backgroundImage: `url(${bgw})` }}
-      >
-        <div className="absolute inset-0 bg-black opacity-0"></div>
-      </div>
+    <section className="relative py-16 px-6 md:px-12 bg-[#10252d] overflow-hidden">
+      <img
+        src={bgw}
+        alt="background"
+        className="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] opacity-45 object-contain z-0"
+      />
 
       <div className="relative max-w-[1440px] mx-auto grid lg:grid-cols-2 gap-12 items-center z-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -27,7 +26,7 @@ function WhyChoose() {
             return (
               <div
                 key={index}
-                className=" bg-[linear-gradient(180deg,rgba(0,0,0,0)_0%,rgba(0,0,0,0.8)_100%)] p-6 rounded-2xl flex flex-col items-start gap-4 hover:shadow-xl transition-all duration-300"
+                className="bg-[linear-gradient(180deg,rgba(0,0,0,0)_0%,rgba(0,0,0,0.8)_100%)] p-6 rounded-2xl flex flex-col items-start gap-4 hover:shadow-xl transition-all duration-300"
               >
                 <img
                   src={icon}

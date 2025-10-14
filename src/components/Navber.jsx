@@ -34,21 +34,21 @@ function Navber() {
 
        
         <div className="hidden md:flex items-center space-x-10 text-sm font-medium">
-          <a href="#" className="hover:text-gray-400 transition  font-normal text-base leading-none tracking-normal text-center">
+          <Link to="#" className="hover:text-gray-400 transition  font-normal text-base leading-none tracking-normal text-center">
             About us
-          </a>
-          <a href="/product" className="hover:text-gray-400 transition  font-normal text-base leading-none tracking-normal text-center">
+          </Link>
+          <Link to="/product" className="hover:text-gray-400 transition  font-normal text-base leading-none tracking-normal text-center">
             Our products
-          </a>
-          <a href="#" className="hover:text-gray-400 transition  font-normal text-base leading-none tracking-normal text-center">
+          </Link>
+          <Link to="#" className="hover:text-gray-400 transition  font-normal text-base leading-none tracking-normal text-center">
             Blog
-          </a>
+          </Link>
          <div className="flex justify-start items-center gap-12 h-full">
 <div className="relative p-[4px] rounded-[16px]">
   <div className="absolute inset-0 rounded-[16px] bg-gradient-to-b from-green-600 to-transparent"></div>
   <div className="absolute inset-0 rounded-[16px] bg-gradient-to-t from-green-600 to-transparent"></div>
 
-  <a href="/contact" className="relative z-10 block rounded-[12px]">
+  <Link to="/contact" className="relative z-10 block rounded-[12px]">
     <button className="w-full group p-[4px] rounded-[12px] bg-[linear-gradient(180deg,#294C32_0%,#67DF89_100%)] shadow-[0_2px_4px_rgba(0,0,0,0.7)] hover:shadow-[0_4px_8px_rgba(0,0,0,0.6)] active:shadow-[0_0px_1px_rgba(0,0,0,0.8)] active:scale-[0.995] transition-all duration-200">
       <div className="bg-transparent rounded-[8px] px-3 py-2">
         <div className="flex gap-2 items-center">
@@ -56,7 +56,7 @@ function Navber() {
         </div>
       </div>
     </button>
-  </a>
+  </Link>
 </div>
 
 </div>
@@ -79,15 +79,15 @@ function Navber() {
             scrolled ? "bg-white text-black" : "bg-black/70 text-white"
           }`}
         >
-          <a href="#" className="hover:text-gray-400 transition">
+          <Link to="#" className="hover:text-gray-400 transition">
             About us
-          </a>
-          <a href="#" className="hover:text-gray-400 transition">
+          </Link>
+          <Link to="#" className="hover:text-gray-400 transition">
             Our products
-          </a>
-          <a href="#" className="hover:text-gray-400 transition">
+          </Link>
+          <Link to="#" className="hover:text-gray-400 transition">
             Blog
-          </a>
+          </Link>
           
           <div className="flex justify-start items-center gap-12 h-full">
             <div className="bg-gradient-to-b from-green-600 to-transparent p-[4px] rounded-[16px]">

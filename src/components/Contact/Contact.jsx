@@ -48,7 +48,7 @@ const Contact = () => {
           <div className="flex flex-col">
             <label className="mb-1 font-inter font-normal text-[14px] leading-[20px] tracking-normal text-[rgba(6,28,61,1)]">Service</label>
             <select
-              className="border border-gray-300 p-2 rounded"
+              className="border text-gray-400 border-gray-300 p-2 rounded"
               required
             >
               <option value="">What are you looking for?</option>

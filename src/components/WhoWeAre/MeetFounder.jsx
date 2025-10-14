@@ -4,11 +4,8 @@ import founderImg from "../../assets/image/man.png";
 export default function MeetFounder() {
   return (
     <section
-      className="lg:min-h-screen text-white py-16 px-4 sm:px-6 md:px-12"
-      style={{
-        background:
-          "linear-gradient(0deg, #52B7E0, #52B7E0), linear-gradient(0deg, rgba(01,0,0,0.8), rgba(0,0,0,0.8))",
-      }}
+      className="lg:min-h-screen  bg-gray-900 text-white py-16 px-4 sm:px-6 md:px-12"
+  
     >
       <div className="max-w-5xl mx-auto text-center mb-10">
         <h2 className="text-2xl sm:text-3xl md:text-4xl  font-thicccboi font-bold lg:text-[48px] leading-[100%] text-center">
@@ -16,7 +13,8 @@ export default function MeetFounder() {
         </h2>
       </div>
 
-     <div className="bg-gradient-to-r from-[#11262b] to-[#050a0a] rounded-2xl overflow-hidden flex flex-col md:flex-col lg:flex-row shadow-lg items-center lg:items-start">
+     {/* <div className="bg-gradient-to-r  from-[#0f5230] to-[#161a1a] rounded-2xl overflow-hidden flex flex-col md:flex-col lg:flex-row shadow-lg items-center lg:items-start"> */}
+       <div className="bg-[linear-gradient(90deg,#0f5230_0%,#000000_100%,#0f5230_0%)] rounded-2xl overflow-hidden flex flex-col md:flex-col lg:flex-row shadow-lg items-center lg:items-start">
   
   
   <div className="w-full lg:w-2/3 flex justify-center lg:justify-start">

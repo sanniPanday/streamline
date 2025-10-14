@@ -94,10 +94,10 @@ export default function Industrypage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#0D1B2A] to-[#1B263B] text-white">
-      <section className="text-center py-28 px-6 md:px-10">
-        <h1 className="text-3xl md:text-5x mb-4 lg:text-[70px] font-bold leading-[81px] tracking-normal text-center font-bricolage">
+      <div className="text-center py-28 px-6 md:px-10">
+        <h3 className="text-3xl md:text-5xl mb-4 lg:text-[70px] font-bold lg:leading-[81px] tracking-normal  font-bricolage tracking-0 text-center ">
           Industry Insights & Updates
-        </h1>
+        </h3>
         <div className="px-12">
            <p className="text-gray-300 mx-auto  mb-8 text-[18px]  leading-[100%] tracking-normal text-center font-poppins">
        Subscribe to learn about new product features, the latest in technology, solutions, and updates.
@@ -139,7 +139,7 @@ export default function Industrypage() {
         </p>
 </div>
         
-      </section>
+      </div>
 
       <div className="p-6 md:p-10 flex flex-col md:flex-row gap-8">
         <aside className="md:w-1/4 bg-[#1B263B]/70 backdrop-blur-sm p-5 rounded-2xl h-max border border-blue-900/40">

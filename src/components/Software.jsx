@@ -4,10 +4,16 @@ import img2 from "../assets/image/img2.png";
 import img3 from "../assets/image/img3.png";
 import img4 from "../assets/image/img.png";
 import voi from "../assets/image/hh.mp4";
+import bg from "../assets/image/bg.png"
 
 function Software() {
   return (
-    <div className="relative min-h-screen bg-gray-900 p-6 md:p-9 text-white overflow-hidden">
+    <div className="relative min-h-screen bg-[#10252d]/100 p-6 md:p-9 text-white overflow-hidden">
+      <img
+    src={bg}
+    alt="background"
+    className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] opacity-80 object-contain z-0"
+  />
       <div className="absolute top-0 left-0 w-full h-[300px] mt-[1030px]">
         <video
           className="w-full h-full object-cover"
@@ -18,7 +24,7 @@ function Software() {
           playsInline
         />
 
-        <div className="absolute inset-0 bg-gray-900/90 z-0"></div>
+        <div className="absolute inset-0 bg-[#10252d]/90 z-0"></div>
       </div>
 
       <div className="relative z-10">
@@ -36,8 +42,8 @@ function Software() {
 
             <div className="absolute inset-0 p-4 flex flex-col justify-between text-white">
               <div>
-                <h2 className="text-xl font-semibold mb-3 font-poppins  text-[24px] leading-[100%] tracking-[0%]">Claim Route 360</h2>
-                <p className="text-sm text-gray-300 mb-2 font-poppins font-normal text-[16px] leading-[100%] tracking-[0%]">
+                <h2 className="text-xl font-semibold mb-3  lg:text-[24px] leading-[100%] tracking-[0%] font-poppins ">Claim Route 360</h2>
+                <p className=" font-poppins font-normal lg:text-[16px] leading-[100%] tracking-[0%] text-sm text-gray-300 mb-2 ">
                   CRM and auto-routing system for insurance adjusters.
                 </p>
               </div>
@@ -48,8 +54,8 @@ function Software() {
           <div className="relative rounded-lg shadow-lg overflow-hidden h-[300px] md:h-[320px] lg:h-[363px] col-span-1 sm:col-span-1 md:col-span-2 lg:col-span-2">
             <img src={img3} alt="" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent p-4 flex flex-col justify-end">
-              <h2 className="text-xl font-semibold mb-3 font-poppins  text-[24px] leading-[100%] tracking-[0%]">Privicam</h2>
-              <p className="text-sm text-gray-300 mb-2 ">
+             <h2 className="text-xl font-semibold mb-3  lg:text-[24px] leading-[100%] tracking-[0%] font-poppins ">Privicam</h2>
+             <p className=" font-poppins font-normal lg:text-[16px] leading-[130%] tracking-[0%] text-sm text-gray-300 mb-2 ">
              Privatic password-protected carrers vsult for photos, videos and documents.
               </p>
               {/* <div className="text-white font-semibold font-poppins  text-[24px] leading-[100%] tracking-[0%]">Coming soon...</div> */}
@@ -71,10 +77,10 @@ function Software() {
               }}
             >
               <div>
-                <h2 className="text-xl mb-3 text-white font-poppins font-semibold text-[24px] leading-[100%] tracking-[0%]">
+                <h2 className="text-xl font-semibold mb-3  lg:text-[24px] leading-[100%] tracking-[0%] font-poppins ">
                   PriviCam
                 </h2>
-                <p className="text-sm text-white mb-2 font-poppins font-normal text-[16px] leading-[130%] tracking-[0%]">
+             <p className=" font-poppins font-normal lg:text-[16px] leading-[130%] tracking-[0%] text-sm text-gray-300 mb-2 ">
                   Private password-protected cameras suited for photos, videos
                   and documents.
                 </p>
@@ -96,10 +102,10 @@ function Software() {
               }}
             >
               <div>
-                <h2 className="text-xl font-semibold mb-3 text-white font-poppins  text-[24px] leading-[100%] tracking-[0%]">
+                <h2 className="text-xl font-semibold mb-3  lg:text-[24px] leading-[100%] tracking-[0%] font-poppins ">
                   ServiceRoute 360
                 </h2>
-             <p className="text-sm text-white mb-2 font-poppins font-normal text-[16px] leading-[130%] tracking-[0%]">
+          <p className=" font-poppins font-normal lg:text-[16px] leading-[130%] tracking-[0%] text-sm text-gray-300 mb-2 ">
                   The adjuster-focused power of CRM/routing SaaS made for remote
                   technicians in real-time.
                 </p>
@@ -119,10 +125,10 @@ function Software() {
               }}
             >
               <div>
-                <h2 className="text-xl  mb-3 text-white font-poppins font-semibold text-[24px] leading-[100%] tracking-[0%]">
+                <h2 className="text-xl font-semibold mb-3  lg:text-[24px] leading-[100%] tracking-[0%] font-poppins ">
                   ServiceRoute 360
                 </h2>
-              <p className="text-sm text-white mb-2 font-poppins font-normal text-[16px] leading-[130%] tracking-[0%]">
+           <p className=" font-poppins font-normal lg:text-[16px] leading-[130%] tracking-[0%] text-sm text-gray-300 mb-2 ">
                   The adjuster-focused power of CRM/routing SaaS made for remote
                   technicians in real-time.
                 </p>
@@ -142,10 +148,10 @@ function Software() {
               }}
             >
               <div>
-                <h2 className="text-xl font-semibold mb-3 text-white font-poppins  text-[24px] leading-[100%] tracking-[0%]">
+                <h2 className="text-xl font-semibold mb-3  lg:text-[24px] leading-[100%] tracking-[0%] font-poppins ">
                   Automotive SAAS app
                 </h2>
-                <p className="text-sm text-white mb-2 font-poppins font-normal text-[16px] leading-[130%] tracking-[0%]">
+             <p className=" font-poppins font-normal lg:text-[16px] leading-[130%] tracking-[0%] text-sm text-gray-300 mb-2 ">
                   White-label automotive repair solutions to simplify workflow
                   and digital kiosks in repair shops.
                 </p>
@@ -171,10 +177,10 @@ function Software() {
               }}
             >
               <div>
-                <h2 className="text-xl  mb-3 text-white font-poppins font-semibold text-[24px] leading-[100%] tracking-[0%]">
+               <h2 className="text-xl font-semibold mb-3  lg:text-[24px] leading-[100%] tracking-[0%] font-poppins ">
                   Fixmate
                 </h2>
-                <p className="text-sm text-white mb-2 font-poppins font-normal text-[16px] leading-[130%] tracking-[0%]">
+             <p className=" font-poppins font-normal lg:text-[16px] leading-[130%] tracking-[0%] text-sm text-gray-300 mb-2 ">
                   Remote guidance for homeowners from field adjusters, fix DIY
                   process in real time, stay tuned.
                 </p>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import btt from "../../assets/image/btt.svg";
+import btt from "../../assets/image/tb.svg";
 
 const faqs = [
   {

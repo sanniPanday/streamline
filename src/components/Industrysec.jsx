@@ -6,25 +6,35 @@ import icons1 from "../assets/image/insurance.svg";
 import icons2 from "../assets/image/Gr.svg";
 import icons3 from "../assets/image/Vector (3).svg";
 import bgkg from "../assets/image/bg.png";
+import bg from "../assets/image/bg.png"
+import tf from "../assets/font/Webfont/THICCCBOI-Black.woff2"
 
 function Industrysec() {
   return (
-    <div className="bg-gray-900 text-white py-12 sm:py-16 px-4 sm:px-6 md:px-10 lg:px-14 relative">
-      <div className="max-w-[1440px] mx-auto grid lg:grid-cols-2 gap-10 items-center lg:min-h-[650px]">
-        
+    <div className="bg-[#10252d] text-white py-12 sm:py-16 px-4 sm:px-6 md:px-10 lg:px-14 relative">
+      
+      <div className="max-w-[1440px] relative mx-auto grid lg:grid-cols-2 gap-10 items-center lg:min-h-[650px]">
+         <div className="absolute inset-0 flex items-center justify-center">
+    <img
+      src={bgkg}
+      alt="background"
+      className="w-[400px] sm:w-[500px] md:w-[600px] lg:w-[700px] object-contain opacity-60"
+    />
+  </div>
         <div>
-          <h1 className="text-[22px] sm:text-[26px] md:text-[32px] lg:text-[48px] mb-4 sm:mb-6 font-bold leading-[130%] text-center lg:text-left">
+          <h1 className=" font-thicccboi font-bold  leading-[130%] tracking-[0%] text-[22px] sm:text-[26px] md:text-[32px] lg:text-[48px] mb-4 sm:mb-6  text-center lg:text-left">
             Engineering Smart <br className="hidden sm:block lg:hidden" />
             Solutions for Real-World <br className="hidden md:block lg:hidden" />
             Industries
           </h1>
-          <p className="text-gray-300 mb-6 font-normal text-[15px] sm:text-[16px] md:text-[18px] leading-[24px] md:leading-[26px] text-center lg:text-left">
+          
+          <p className=" font-thicccboi  tracking-[0%] font-normal text-gray-300 mb-6  text-[15px] sm:text-[16px] md:text-[18px] leading-[24px] md:leading-[26px] text-center lg:text-left">
             We design and develop purpose-built software that simplifies complex
             workflows. From mobile apps to cloud platforms, our solutions empower
             professionals in insurance, construction, field service, and automotive
             sectors to work smarter, faster, and with more control.
           </p>
-
+{/* <h1 className="font-[tf]">chvh </h1> */}
           <div className="flex justify-center lg:justify-start">
             <div className="relative p-[4px] rounded-[16px]">
               <div className="absolute inset-0 rounded-[16px] bg-gradient-to-b from-green-600 to-transparent"></div>
@@ -47,16 +57,16 @@ function Industrysec() {
               alt="background"
               className="w-[400px] sm:w-[500px] md:w-[600px] lg:w-[700px] h-[180px] sm:h-[200px] object-cover object-center"
             />
-            <div className="absolute inset-0 bg-black/80"></div>
+            <div className="absolute inset-0 bg-[#10252d]"></div>
           </div>
 
-          <div className="relative rounded-lg overflow-hidden">
+          <div className="relative rounded-md overflow-hidden">
             <img
               src={ind1}
               alt="Insurance"
-              className="w-full h-full object-cover relative z-10"
+              className="w-full h-full object-cover rounded-md relative z-10"
             />
-            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3 text-white z-10 text-sm sm:text-base font-medium text-center">
+            <div className="absolute bottom-0 left-0 right-0 rounded-md p-3 text-white z-10 text-sm sm:text-base font-medium text-center">
               <div className="flex items-center gap-2 sm:gap-3 justify-center">
                 <img src={icons1} className="h-6 w-6 sm:h-8 sm:w-8" alt="icon" />
                 Insurance
@@ -64,11 +74,11 @@ function Industrysec() {
             </div>
           </div>
 
-          <div className="relative rounded-lg overflow-hidden sm:row-span-2">
+          <div className="relative rounded-md overflow-hidden sm:row-span-2">
             <img
               src={ind2}
               alt="Automotive"
-              className="w-full h-full object-cover relative z-10"
+              className="w-full h-full object-cover rounded-md relative z-10"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3 text-white z-10 text-sm sm:text-base font-medium text-center">
               <div className="flex items-center gap-2 sm:gap-3 justify-center">
@@ -78,13 +88,13 @@ function Industrysec() {
             </div>
           </div>
 
-          <div className="relative rounded-lg overflow-hidden">
+          <div className="relative rounded-md overflow-hidden">
             <img
               src={ind3}
               alt="Construction"
-              className="w-full h-full object-cover relative z-10"
+              className="w-full h-full object-cover rounded-md relative z-10"
             />
-            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3 text-white z-10 text-sm sm:text-base font-medium text-center">
+            <div className="absolute bottom-0 left-0 right-0  p-3 text-white z-10 text-sm sm:text-base font-medium text-center">
               <div className="flex items-center gap-2 sm:gap-3 justify-center">
                 <img src={icons3} className="h-6 w-6 sm:h-8 sm:w-8" alt="icon" />
                 Construction

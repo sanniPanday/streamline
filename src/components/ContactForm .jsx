@@ -3,25 +3,25 @@ import bg from "../assets/image/bg.png";
 
 const ContactForm = () => {
   return (
-    <div className="relative w-full min-h-[564px] flex items-center justify-center px-6 sm:px-8 md:px-12 lg:px-18 py-16 text-white overflow-hidden bg-[linear-gradient(107.56deg,#161616_0%,#2F2F2F_50%,#0A0A0A_100%)]">
+    <div className="relative bg-[#1B1B1B] w-full min-h-[564px] flex items-center justify-center px-6 sm:px-8 md:px-12 lg:px-18 py-16 text-white overflow-hidden">
+      
+     
       <img
         src={bg}
         alt="background"
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
-                   w-[220px] h-[220px] sm:w-[280px] sm:h-[280px] md:w-[340px] md:h-[340px] lg:w-[420px] lg:h-[420px] 
-                   object-contain opacity-20 pointer-events-none"
+        className="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] opacity-15 object-contain z-0"
       />
 
       <div className="relative flex flex-col md:flex-col lg:flex-row items-center lg:items-start justify-between w-full max-w-[1440px] gap-12 lg:gap-20 z-10">
         <div className="w-full lg:w-1/2 text-center lg:text-left">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight">
+          <h2 className=" font-thicccboi font-bold leading-[100%] tracking-[0%] text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 sm:mb-6">
             Let’s Build It{" "}
             <span className="hidden lg:inline">
               <br />
             </span>{" "}
             Together
           </h2>
-          <p className="text-gray-300 text-sm sm:text-base md:text-lg max-w-md mx-auto lg:mx-0">
+          <p className="font-thicccboi font-normal lg:text-[18px] leading-[26px] tracking-[0%] text-gray-300 text-sm sm:text-base md:text-lg max-w-md mx-auto lg:mx-0">
             We’ll reach out to you in the next few hours to arrange a meeting
             where we can talk about your objectives.
           </p>
@@ -33,19 +33,19 @@ const ContactForm = () => {
               <input
                 type="text"
                 placeholder="Name"
-                className="w-full md:w-1/2 p-3 rounded bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400"
+                className="w-full md:w-1/2 p-3 rounded bg-[#2F2F2F] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400"
               />
               <input
                 type="email"
                 placeholder="Email address"
-                className="w-full md:w-1/2 p-3 rounded bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400"
+                className="w-full md:w-1/2 p-3 rounded bg-[#2F2F2F] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400"
               />
             </div>
 
             <textarea
               rows="5"
               placeholder="Type your message..."
-              className="w-full p-3 rounded bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400"
+              className="w-full p-3 rounded bg-[#2F2F2F] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400"
             ></textarea>
 
             <div className="flex justify-center lg:justify-end">

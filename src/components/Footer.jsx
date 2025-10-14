@@ -11,9 +11,9 @@ const Footer = () => {
             alt="Streamiine Factory Logo"
             className="h-12 w-12 object-contain"
           />
-          <div className="text-left leading-tight">
-            <h3 className="text-xl font-semibold">Streamiine</h3>
-            <h3 className="text-xl font-semibold">factory</h3>
+          <div className="text-left  font-poppins font-bold text-[32px] leading-[100%] tracking-[0%]">
+            <h3 className="text-xl font-poppins font-bold lg:text-[32px] leading-[100%] tracking-[0%]">Streamiine</h3>
+            <h3 className="text-xl font-poppins font-bold text-[32px] leading-[100%] tracking-[0%]">factory</h3>
           </div>
         </div>
 

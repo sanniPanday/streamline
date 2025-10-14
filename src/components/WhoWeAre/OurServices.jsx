@@ -1,6 +1,5 @@
 import React from "react";
 import serviceImg from "../../assets/image/ww.png";
-
 const services = [
   {
     title: "Streamline Claims & Inspections",
@@ -36,9 +35,9 @@ const OurServices = () => {
       <div className="flex flex-col md:flex-row justify-center gap-10 md:gap-20 w-full max-w-7xl mx-auto">
         <div className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left">
           <div className="mb-8 sm:mb-10">
-            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold">
+            <h4 className="text-2xl sm:text-3xl md:text-5xl font-bold">
               Our services
-            </h2>
+            </h4>
             <p className="text-gray-300 mt-4 font-thicccboi font-normal text-[16px] sm:text-[18px] leading-[24px] sm:leading-[26px] tracking-[0]">
               To simplify complex workflows through intuitive, scalable software. We
               empower professionals in high-demand industries to work smarter and

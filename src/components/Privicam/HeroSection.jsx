@@ -15,9 +15,9 @@ function HeroSection() {
   ];
 
   return (
-    <div className="bg-gray-900/80 relative w-full overflow-visible">
+    <div className="bg-gray-900/80 relative w-full lg:h-[1200px] overflow-visible">
     
-      <div className="relative w-full flex flex-col items-center justify-center text-white overflow-visible min-h-screen h-[1200px]">
+      <div className=" py-32 relative w-full flex flex-col items-center justify-center text-white overflow-visible min-h-screen ]">
         <video
           className="absolute top-0 left-0 w-full h-full object-cover z-0"
           src={hero}
