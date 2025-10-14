@@ -14,7 +14,7 @@ function ManagementMain() {
       <FeatureSection/>
       <Subscription/>
       <MSlider/>
-      <FrequentlyM/>
+      {/* <FrequentlyM/> */}
     </div>
   )
 }

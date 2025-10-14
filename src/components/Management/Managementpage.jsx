@@ -5,12 +5,12 @@ const Managementpage = () => {
   
 
   return (
-    <div className="bg-gray-900 h-[530px] lg:h-[970px] text-white py-32 px-6 md:px-12 lg:px-24">
+    <div className="bg-[#10252d] h-[530px] lg:h-[970px]  text-white py-32 px-6 md:px-12 lg:px-24">
       <div className="absolute inset-10 flex justify-center">
         <img
           src={bg}
           alt="Background"
-          className="w-[570px] h-[400px] object-cover opacity-90 mt-0"
+          className="w-[500px] h-[430px] object-cover opacity-90 mt-0"
         />
         <div className="absolute inset-0 "></div>
       </div>
@@ -25,7 +25,7 @@ const Managementpage = () => {
           <img
             src={magent}
             alt="Video thumbnail"
-            className="w-full h-full object-cover"
+            className="w-full lg:h-[647px] object-cover"
           />
         </div>
       </div>

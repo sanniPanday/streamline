@@ -107,7 +107,7 @@ export default function FrequentlyAskedQuestions() {
   };
 
   return (
-    <section className="bg-gray-900 text-white py-16 px-4 sm:px-6 md:px-12">
+    <section className="bg-[#10252d] text-white py-16 px-4 sm:px-6 md:px-12">
       <div className="max-w-3xl mx-auto text-center mb-12">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-center">
           Frequently Asked Questions

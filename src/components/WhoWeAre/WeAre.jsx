@@ -4,17 +4,19 @@ const WeAre = () => {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
 
   return (
-   <section className="relative bg-gray-900 py-32 px-6 md:px-12 lg:px-24 text-white">
-      <div className="absolute inset-0 flex justify-center">
-        <img
-          src={bg}
-          alt="Background"
-          className="w-[570px] h-[500px] object-cover opacity-90 mt-0"
-        />
-        <div className="absolute inset-0 bg-gray-900/70"></div>
-      </div>
+   <section className="relative bg-[#10252d] py-32 px-6 md:px-12 lg:px-24 text-white">
+      <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-0 w-[700px] h-[600px] opacity-70 pointer-events-none">
+    <img 
+      src={bg} 
+      alt="Background" 
+      className="w-full h-full object-cover"
+    />
+  </div>
       <div className="text-center  mx-auto relative z-10 ">
-        <h3 className="text-3xl md:text-4xl lg:text-[70px] lg:leading-[91px] font-bricolage font-bold mb-6 text-white">
+        {/* <h2 className="text-3xl md:text-4xl lg:text-[70px] lg:leading-[91px] mb-6 text-white">
+          Who We Are
+        </h2> */}
+         <h3 className="text-3xl md:text-4xl font-bold mb-4 text-white font-thicccboi lg:text-[48px] leading-[140%] text-center">
           Who We Are
         </h3>
         <p className=" text-gray-300 mb-6  font-poppins font-normal text-[20px] leading-[140%] text-center">
@@ -68,16 +70,24 @@ const WeAre = () => {
       </div>
 
       <div className=" relative z-10  mt-16 mx-auto text-center lg:text-start">
-        <h4 className="text-3xl md:text-3xl lg:text-[48px] mb-4 font-bold leading-[140%] tracking-[0] text-center lg:text-start">
+        <h2 className="text-3xl md:text-3xl lg:text-[48px] mb-4 font-bold leading-[140%] tracking-[0] text-center lg:text-start">
           Our mission - message from founder
-        </h4>
-        <p className="text-gray-300 px-0 md:px-10 lg:px-0 text-center lg:text-start text-md font-light lg:text-[24px] leading-[140%] ">
+        </h2>
+        {/* <p className=" font-thicccboi font-normal  tracking-[-1.12%] text-gray-300  text-center lg:text-start text-md  lg:text-[24px] leading-[140%] ">
           At Streamline Factory, we believe complex work should be simple. After
           years in industries weighed down by inefficiency, we set out to create
           software that takes the stress out of everyday tasks. Our mission is
           to give professionals the tools they need to save time, cut through
           clutter, and focus on what really matters — results.
-        </p>
+        </p> */}
+        {/* <p className="text-gray-300 mt-4  font-thicccboi font-normal text-[18px]">qwcdmhqchch</p> */}
+         <p className="text-gray-300 mt-4  font-thicccboi font-normal text-[16px] sm:text-[18px] leading-[24px] sm:leading-[29px] tracking-[0]">
+             At Streamline Factory, we believe complex work should be simple. After
+          years in industries weighed down by inefficiency, we set out to create
+          software that takes the stress out of everyday tasks. Our mission is
+          to give professionals the tools they need to save time, cut through
+          clutter, and focus on what really matters — results.
+            </p>
       </div>
     </section>
   );

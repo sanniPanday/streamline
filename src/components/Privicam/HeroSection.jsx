@@ -15,7 +15,7 @@ function HeroSection() {
   ];
 
   return (
-    <div className="bg-gray-900/80 relative w-full lg:h-[1200px] overflow-visible">
+    <div className="bg-[#10252d] relative w-full lg:h-[1200px] overflow-visible">
     
       <div className=" py-32 relative w-full flex flex-col items-center justify-center text-white overflow-visible min-h-screen ]">
         <video
@@ -26,7 +26,7 @@ function HeroSection() {
           muted
           playsInline
         />
-        <div className="absolute inset-0 bg-gray-900/80 z-10"></div>
+        <div className="absolute inset-0 bg-[#10252d]/90 z-10"></div>
 
         <div className="relative z-20 max-w-7xl mx-auto w-full px-4 sm:px-6 md:px-12 flex flex-col lg:flex-row items-center gap-8">
           <div className="flex-1 flex flex-col items-center lg:items-start text-center lg:text-left gap-6">
@@ -64,7 +64,7 @@ function HeroSection() {
       </div>
 
     
-      <div className="relative z-20 bg-gray-900 text-gray-100 py-12 px-4 sm:px-6 md:px-12">
+      <div className="relative z-20 bg-[#10252d]/95 text-gray-100 py-12 px-4 sm:px-6 md:px-12">
         <div className="max-w-7xl mx-auto w-full">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {steps.map((step, idx) => (

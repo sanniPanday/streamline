@@ -61,9 +61,9 @@ const OurServices = () => {
                   "linear-gradient(90deg, rgba(103, 223, 137, 0.1) 0%, rgba(0, 0, 0, 0) 100%)",
               }}
             >
-              <h3 className="text-lg sm:text-xl font-semibold text-white mb-2">
+              <h4 className="text-lg lg:text-[24px]  text-white mb-2">
                 {service.title}
-              </h3>
+              </h4>
               <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
                 {service.desc}
               </p>

@@ -4,7 +4,7 @@ import founderImg from "../../assets/image/man.png";
 export default function MeetFounder() {
   return (
     <section
-      className="lg:min-h-screen  bg-gray-900 text-white py-16 px-4 sm:px-6 md:px-12"
+      className="lg:min-h-screen  bg-[#10252d] text-white py-16 px-4 sm:px-6 md:px-12"
   
     >
       <div className="max-w-5xl mx-auto text-center mb-10">

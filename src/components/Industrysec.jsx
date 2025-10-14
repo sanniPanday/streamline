@@ -22,11 +22,11 @@ function Industrysec() {
     />
   </div>
         <div>
-          <h1 className=" font-thicccboi font-bold  leading-[130%] tracking-[0%] text-[22px] sm:text-[26px] md:text-[32px] lg:text-[48px] mb-4 sm:mb-6  text-center lg:text-left">
+          <h2 className=" font-thicccboi font-bold  leading-[130%] tracking-[0%] text-[22px] sm:text-[26px] md:text-[32px] lg:text-[48px] mb-4 sm:mb-6  text-center lg:text-left">
             Engineering Smart <br className="hidden sm:block lg:hidden" />
             Solutions for Real-World <br className="hidden md:block lg:hidden" />
             Industries
-          </h1>
+          </h2>
           
           <p className=" font-thicccboi  tracking-[0%] font-normal text-gray-300 mb-6  text-[15px] sm:text-[16px] md:text-[18px] leading-[24px] md:leading-[26px] text-center lg:text-left">
             We design and develop purpose-built software that simplifies complex
@@ -50,14 +50,14 @@ function Industrysec() {
           </div>
         </div>
 
-        <div className="relative grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className=" relative grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="absolute inset-0 flex justify-center items-center">
             <img
               src={bgkg}
               alt="background"
               className="w-[400px] sm:w-[500px] md:w-[600px] lg:w-[700px] h-[180px] sm:h-[200px] object-cover object-center"
             />
-            <div className="absolute inset-0 bg-[#10252d]"></div>
+            <div className="absolute inset-0 bg-[#04a9eb]"></div>
           </div>
 
           <div className="relative rounded-md overflow-hidden">

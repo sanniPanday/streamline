@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import prod1 from "../../assets/image/p2.png";
-import prod2 from "../../assets/image/p2.png";
-import prod3 from "../../assets/image/p2.png";
-import prod4 from "../../assets/image/p2.png";
-
+import prod1 from "../../assets/image/in1.png";
+import prod2 from "../../assets/image/in2.png";
+import prod3 from "../../assets/image/in3.png";
+// import prod4 from "../../assets/image/p2.png";
+ import bgi from "../../assets/image/bg.png"
 const filters = [
   "All",
   "Claim Route 360",
@@ -57,7 +57,7 @@ const cards = [
     date: "1 Jan 2023",
     desc: "Enhanced privacy control and secure communications.",
     category: "PriviCom",
-    img: prod4,
+    img: prod1,
   },
   {
     id: 5,
@@ -66,7 +66,7 @@ const cards = [
     date: "1 Jan 2023",
     desc: "Make production efficient with automation tools.",
     category: "Streamline Factory",
-    img: prod1,
+    img: prod2,
   },
   {
     id: 6,
@@ -75,7 +75,7 @@ const cards = [
     date: "1 Jan 2023",
     desc: "Driving innovation in automotive software.",
     category: "Automotive SaaS",
-    img: prod2,
+    img: prod3,
   },
 ];
 
@@ -93,11 +93,16 @@ export default function Industrypage() {
   });
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#0D1B2A] to-[#1B263B] text-white">
-      <div className="text-center py-28 px-6 md:px-10">
-        <h3 className="text-3xl md:text-5xl mb-4 lg:text-[70px] font-bold lg:leading-[81px] tracking-normal  font-bricolage tracking-0 text-center ">
+    <div className=" relative min-h-screen bg-[#10252d] text-white">
+     <img
+    src={bgi}
+    alt="background"
+    className="absolute top-0 left-1/2 -translate-x-1/2 w-[750px] opacity-70 object-contain z-0"
+  />
+      <div className=" relative z-10 text-center py-28 px-6 md:px-10">
+        <h4 className="text-3xl md:text-5xl mb-4 lg:text-[70px] font-bold lg:leading-[81px] tracking-normal  font-bricolage tracking-0 text-center ">
           Industry Insights & Updates
-        </h3>
+        </h4>
         <div className="px-12">
            <p className="text-gray-300 mx-auto  mb-8 text-[18px]  leading-[100%] tracking-normal text-center font-poppins">
        Subscribe to learn about new product features, the latest in technology, solutions, and updates.
@@ -105,7 +110,7 @@ export default function Industrypage() {
         </div>
        
 
-        <div className="flex justify-center items-center gap-2 max-w-md mx-auto">
+        <div className=" relative z-10 flex justify-center items-center gap-2 max-w-md mx-auto">
           <input
             type="text"
             placeholder="Search product name..."
@@ -142,7 +147,7 @@ export default function Industrypage() {
       </div>
 
       <div className="p-6 md:p-10 flex flex-col md:flex-row gap-8">
-        <aside className="md:w-1/4 bg-[#1B263B]/70 backdrop-blur-sm p-5 rounded-2xl h-max border border-blue-900/40">
+        <aside className="md:w-1/4 bg-[rgba(10,10,10,1)]/60 backdrop-blur-sm p-5 rounded-2xl h-max border border-blue-900/40">
           <h2 className="text-lg font-semibold mb-4">Filter by</h2>
           <div className="space-y-2">
             {filters.map((filter) => (
@@ -166,7 +171,7 @@ export default function Industrypage() {
             {categories.map((cat) => (
               <button
                 key={cat}
-                className="px-4 py-2 rounded-full bg-[#1B263B]/80 hover:bg-blue-600 transition text-sm"
+                className=" relative z-10 px-4 py-2 rounded-md bg-[rgba(0,0,0,0.8)]/10 border-2 border-[rgba(84,84,84,1)] hover:bg-blue-500 transition text-sm"
               >
                 {cat}
               </button>
@@ -178,7 +183,7 @@ export default function Industrypage() {
               filteredCards.map((card) => (
                 <div
                   key={card.id}
-                  className="bg-[#1B263B]/80 border border-blue-900/40 rounded-xl overflow-hidden shadow-md hover:shadow-blue-500/20 transition"
+                  className="bg-[#1B263B]/80 border border-blue-900/40 rounded-1 overflow-hidden shadow-md hover:shadow-blue-500/20 transition"
                 >
                   <img
                     src={card.img}
@@ -189,10 +194,10 @@ export default function Industrypage() {
                     <p className="text-sm font-semibold text-green-500">
                       {card.author} • {card.date}
                     </p>
-                    <h3 className="mt-2 text-[20px] font-semibold leading-[100%] font-thicccboi">
+                    <h3 className="mt-2    text-[20px]  tracking-[0%]text-[20px] font-semibold leading-[100%] font-thicccboi">
                       {card.title}
                     </h3>
-                    <p className="text-gray-300 text-sm mt-1">{card.desc}</p>
+                    <p className="text-gray-400 text-sm mt-3 font-[Inter] font-normal lg:text-[16px] leading-[24px] tracking-[0%]">{card.desc}</p>
                   </div>
                 </div>
               ))

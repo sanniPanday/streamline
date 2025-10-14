@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import SlickSlider from "react-slick";
 
 import Right from "../assets/image/r.png";
@@ -14,7 +14,9 @@ import "slick-carousel/slick/slick-theme.css";
 //  import tf from "../assets/font/Bricolage_Grotesque/static/BricolageGrotesque_24pt_Condensed-Bold.ttf";
 
 // import tff from "../assets/font/Bricolage_Grotesque/static/BricolageGrotesque_24pt_Condensed-Bold.ttf"
+
 const Slider = () => {
+  const [slideCount, setSlideCount] = useState(2);
   const sliderRef = useRef(null);
 
   const settings = {
@@ -22,7 +24,7 @@ const Slider = () => {
     autoplay: true,
     speed: 800,
     autoplaySpeed: 3000,
-    slidesToShow: 2,
+    slidesToShow: slideCount,
     slidesToScroll: 1,
     arrows: false,
     responsive: [
@@ -31,7 +33,23 @@ const Slider = () => {
       { breakpoint: 468, settings: { slidesToShow: 1 } },
     ],
   };
+useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 500){
+     setSlideCount(1)
+      }
+      else{
+        setSlideCount(2)
+      }
+    };
 
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   const testimonials = [
     {
       img: sider1,
@@ -78,21 +96,21 @@ const Slider = () => {
             src={Lif}
             alt="Previous"
             onClick={() => sliderRef.current.slickPrev()}
-            className="h-12 w-12 cursor-pointer p-2 bbg-[#10252d]  transition"
+            className="h-14 w-14 cursor-pointer p-2 bbg-[#10252d]  transition"
           />
           <img
             src={Right}
             alt="Next"
             onClick={() => sliderRef.current.slickNext()}
-            className="h-12 w-12 cursor-pointer p-2  transition"
+            className="h-14 w-14 cursor-pointer p-2  transition"
           />
         </div>
 
         <div className="overflow-hidden">
           <SlickSlider ref={sliderRef} {...settings}>
             {testimonials.map((t, i) => (
-              <div key={i} className="px-4">
-                <div className="lg:h-[272px] lg:w-[560px] bg-gradient-to-br from-green-900 to-gray-900 rounded-xl p-6 shadow-lg text-center md:text-center lg:text-left mx-auto">
+              <div key={i} className="px-4 ">
+                <div className=" lg:h-[272px] lg:w-[560px] bg-gradient-to-br from-green-900 to-gray-900 rounded-xl p-6 shadow-lg text-center md:text-center lg:text-left mx-auto">
                   <div className="flex flex-col lg:flex-row items-center lg:items-start mb-6 mt-3 lg:mt-5">
                     <img
                       src={t.img}

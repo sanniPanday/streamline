@@ -7,8 +7,8 @@ import "swiper/css/navigation";
 import img1 from "../../assets/image/s2.png"; 
 import img2 from "../../assets/image/s1.png";
 import img3 from "../../assets/image/s3.png";
-import bttl from "../../assets/image/L.svg"; // left button image
-import bttr from "../../assets/image/r.png";  // right button image
+import bttl from "../../assets/image/L.svg"; 
+import bttr from "../../assets/image/r.png";  
 
 const SecureSlider = () => {
   const images = [img1, img2, img3, img1, img2, img3, img1, img2, img3];
