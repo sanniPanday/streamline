@@ -13,7 +13,7 @@ function Home() {
     <>
       <Herosec />
       <Industrysec />
-      <Purpose />
+      {/* <Purpose /> */}
       <Software />
       <WhyChoose />
       <MissionVision />     

@@ -119,11 +119,11 @@ export default function FrequentlyAskedQuestions() {
         </p>
       </div>
 
-      <div className="space-y-4 lg:max-w-full sm:max-w-xl md:max-w-2xl mx-auto">
+      <div className="space-y-4  lg:max-w-[1062px] sm:max-w-xl md:max-w-2xl mx-auto">
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className="bg-gradient-to-b from-[rgba(0,0,0,0.2)] to-[rgba(0,0,0,0.2)] rounded-lg overflow-hidden border border-gray-800"
+            className="   bg-gradient-to-b from-[rgba(0,0,0,0.2)] to-[rgba(0,0,0,0.2)] rounded-[20px] border-2 overflow-hidden border-gray-700/90 border-gray-800"
           >
             <div
               className="w-full flex justify-between items-center px-4 sm:px-6 py-4 cursor-pointer"

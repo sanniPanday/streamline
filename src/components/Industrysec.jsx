@@ -13,7 +13,7 @@ function Industrysec() {
   return (
     <div className="bg-[#10252d] text-white py-12 sm:py-16 px-4 sm:px-6 md:px-10 lg:px-14 relative">
       
-      <div className="max-w-[1440px] relative mx-auto grid lg:grid-cols-2 gap-10 items-center lg:min-h-[650px]">
+      <div className="max-w-[1440px] relative mx-auto grid lg:grid-cols-2 gap-10 items-center lg:min-h-[550px]">
          <div className="absolute inset-0 flex items-center justify-center">
     <img
       src={bgkg}
@@ -49,15 +49,71 @@ function Industrysec() {
             </div>
           </div>
         </div>
+<div className="relative grid grid-cols-1 sm:grid-cols-2 gap-4">
+  
+  <div className="absolute inset-0 flex justify-center items-center">
+    <img
+      src={bgkg}
+      alt="background"
+      className="w-[400px] sm:w-[500px] md:w-[600px] lg:w-[700px] h-[180px] sm:h-[200px] object-cover object-center"
+    />
+    <div className="absolute inset-0"></div>
+  </div>
 
-        <div className=" relative grid grid-cols-1 sm:grid-cols-2 gap-4">
+  <div className="relative rounded-[20px] overflow-hidden group">
+    <img
+      src={ind1}
+      alt="Insurance"
+      className="w-full h-full object-cover rounded-[20px] transform transition-transform duration-500 group-hover:scale-110 group-hover:brightness-110"
+    />
+    <div className="absolute bottom-0 left-0 right-0 rounded-md p-3 text-white z-10 text-sm sm:text-base font-medium text-center bg-gradient-to-t from-black/60 to-transparent">
+      <div className="flex items-center gap-2 sm:gap-3 justify-center">
+        <img src={icons1} className="h-6 w-6 sm:h-8 sm:w-8" alt="icon" />
+        Insurance
+      </div>
+    </div>
+  </div>
+
+  <div className="relative rounded-[20px] overflow-hidden sm:row-span-2 group">
+    <img
+      src={ind2}
+      alt="Automotive"
+      className="w-full h-full object-cover rounded-[20px] transform transition-transform duration-500 group-hover:scale-110 group-hover:brightness-110"
+    />
+    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3 text-white z-10 text-sm sm:text-base font-medium text-center">
+      <div className="flex items-center gap-2 sm:gap-3 justify-center">
+        <img src={icons2} className="h-6 w-6 sm:h-8 sm:w-8" alt="icon" />
+        Automotive
+      </div>
+    </div>
+  </div>
+
+  <div className="relative rounded-[20px] overflow-hidden group">
+    <img
+      src={ind3}
+      alt="Construction"
+      className="w-full h-full object-cover rounded-[20px] transform transition-transform duration-500 group-hover:scale-110 group-hover:brightness-110"
+    />
+    <div className="absolute bottom-0 left-0 right-0 p-3 text-white z-10 text-sm sm:text-base font-medium text-center bg-gradient-to-t from-black/60 to-transparent">
+      <div className="flex items-center gap-2 sm:gap-3 justify-center">
+        <img src={icons3} className="h-6 w-6 sm:h-8 sm:w-8" alt="icon" />
+        Construction
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+        {/* <div className=" relative grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="absolute inset-0 flex justify-center items-center">
             <img
               src={bgkg}
               alt="background"
               className="w-[400px] sm:w-[500px] md:w-[600px] lg:w-[700px] h-[180px] sm:h-[200px] object-cover object-center"
             />
-            <div className="absolute inset-0 bg-[#04a9eb]"></div>
+            <div className="absolute inset-0 "></div>
           </div>
 
           <div className="relative rounded-md overflow-hidden">
@@ -101,7 +157,7 @@ function Industrysec() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

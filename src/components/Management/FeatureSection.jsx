@@ -47,28 +47,50 @@ const FeatureSection = () => {
       />
     </div>
 
-    <div className="flex-1 text-center lg:text-left space-y-4 px-4 lg:px-16 ">
-      <div className="flex items-center justify-center lg:justify-start">
-        <div className="relative flex items-center justify-center h-10 w-10">
-          <div
-            className="absolute inset-0 rounded-full"
-            style={{
-              background: `conic-gradient(#22c55e 0deg 108deg, #4b5563 108deg 360deg)`,
-              mask: "radial-gradient(farthest-side, transparent calc(100% - 2px), black 0)",
-              WebkitMask:
-                "radial-gradient(farthest-side, transparent calc(100% - 2px), black 0)",
-            }}
-          ></div>
-          <span className="text-white text-xl font-bold">2</span>
-        </div>
-      </div>
-
-      <h2 className="text-3xl md:text-4xl font-bold">Routing & Scheduling</h2>
-      <p className="text-gray-300 text-base leading-relaxed max-w-md mx-auto lg:mx-0">
-       Automatically route and schedule dozens of claims in seconds, saving hours of planning time and keeping your calendar fully optimized.
-      </p>
+   <div className="flex-1 text-center lg:text-left space-y-4 px-4 lg:px-2 lg:ml-28">
+  <div className="flex items-center justify-center lg:justify-start">
+    <div className="relative flex items-center justify-center h-10 w-10">
+      <div
+        className="absolute inset-0 rounded-full"
+        style={{
+          background: `conic-gradient(#22c55e 0deg 108deg, #4b5563 108deg 360deg)`,
+          mask: "radial-gradient(farthest-side, transparent calc(100% - 2px), black 0)",
+          WebkitMask:
+            "radial-gradient(farthest-side, transparent calc(100% - 2px), black 0)",
+        }}
+      ></div>
+      <span className="text-white text-xl font-bold">2</span>
     </div>
+  </div>
 
+  <h2 className="text-3xl md:text-4xl font-bold">Routing & Scheduling</h2>
+  <p className="text-gray-300 text-base leading-relaxed max-w-md mx-auto lg:mx-0">
+    Automatically route and schedule dozens of claims in seconds, saving hours of planning time and keeping your calendar fully optimized.
+  </p>
+</div>
+
+{/* <div className="flex-1 text-center space-y-4 px-4 lg:px-16">
+  <div className="flex items-center justify-start lg:ml-28">
+    <div className="relative flex items-center justify-center h-10 w-10">
+      <div
+        className="absolute inset-0 rounded-full"
+        style={{
+          background: `conic-gradient(#22c55e 0deg 108deg, #4b5563 108deg 360deg)`,
+          mask: "radial-gradient(farthest-side, transparent calc(100% - 2px), black 0)",
+          WebkitMask:
+            "radial-gradient(farthest-side, transparent calc(100% - 2px), black 0)",
+        }}
+      ></div>
+      <span className="text-white text-xl font-bold">2</span>
+    </div>
+  </div>
+<div>
+  <h2 className="text-3xl md:text-4xl font-bold">Routing & Scheduling</h2>
+  <p className="text-gray-300 text-base leading-relaxed px-10 ml-20">
+    Automatically route and schedule dozens of claims in seconds, saving hours of planning time and keeping your calendar fully optimized.
+  </p>
+</div>
+</div> */}
     
   </div>
 
@@ -114,7 +136,7 @@ const FeatureSection = () => {
       />
     </div>
 
-    <div className="flex-1 text-center lg:text-left space-y-4 px-4 lg:px-16">
+    <div className="flex-1 text-center lg:text-left space-y-4 px-4 lg:px-2  lg:ml-28">
       <div className="flex items-center justify-center lg:justify-start">
         <div className="relative flex items-center justify-center h-10 w-10">
           <div

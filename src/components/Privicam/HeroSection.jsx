@@ -16,8 +16,7 @@ function HeroSection() {
 
   return (
     <div className="bg-[#10252d] relative w-full lg:h-[1200px] overflow-visible">
-    
-      <div className=" py-32 relative w-full flex flex-col items-center justify-center text-white overflow-visible min-h-screen ]">
+      <div className="py-32 relative w-full flex flex-col items-center justify-center text-white overflow-visible min-h-screen">
         <video
           className="absolute top-0 left-0 w-full h-full object-cover z-0"
           src={hero}
@@ -54,34 +53,41 @@ function HeroSection() {
           </div>
 
           <div className="flex-1 mt-28 lg:mt-0 flex justify-center lg:justify-end">
-            <img src={pho} className="w-full max-w-[600px] h-auto object-contain" alt="Hero" />
+            <img
+              src={pho}
+              className="w-[90%] sm:w-[80%] md:w-[70%] lg:w-full max-w-[600px] h-auto object-contain"
+              alt="Hero"
+            />
           </div>
         </div>
 
-        <h2 className="z-20 absolute bottom-2 text-2xl sm:text-3xl md:text-4xl  text-white w-full font-bold lg:text-[56px] leading-[100%] tracking-[0%] text-center">
+        <h2 className="z-20 absolute bottom-2 text-2xl sm:text-3xl md:text-4xl text-white w-full font-bold lg:text-[56px] leading-[100%] tracking-[0%] text-center">
           How it works
         </h2>
       </div>
 
-    
       <div className="relative z-20 bg-[#10252d]/95 text-gray-100 py-12 px-4 sm:px-6 md:px-12">
-        <div className="max-w-7xl mx-auto w-full">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="max-w-7xl mx-auto w-full flex justify-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 justify-items-center">
             {steps.map((step, idx) => (
               <div
                 key={idx}
-                className="rounded-lg p-6 flex flex-col items-center text-center hover:scale-105 transition-transform duration-300"
+                className="rounded-[20px] border-2 border-gray-700/90 h-[340px] w-[260px] md:h-[350px] md:w-[280px] lg:h-[372px] lg:w-[287px]  p-6 py-12 flex flex-col items-center text-center hover:scale-105 transition-transform duration-300"
                 style={{
-                  background: `linear-gradient(180deg, rgba(82, 223, 141, 1) 0%, rgba(0, 0, 0, 1) 100%)`
+                  background: `linear-gradient(180deg, rgba(82, 223, 141, 1) 0%, rgba(0, 0, 0, 1) 100%)`,
                 }}
               >
                 <img
                   src={step.img}
                   alt={step.title}
-                  className="h-[150px] w-[136px] sm:h-[140px] sm:w-[126px] md:h-[180px] md:w-[136px] mb-5 object-contain"
+                  className="h-[120px] w-[120px] sm:h-[130px] sm:w-[130px] md:h-[140px] md:w-[150px] lg:h-[150px] lg:w-[160px] mb-[16px] object-contain"
                 />
-                <h3 className=" text-lg mb-2 text-white font-poppins font-medium text-[24px] leading-[100%] tracking-[0px] text-center">{step.title}</h3>
-                <p className="text-white text-sm font-poppins font-normal text-[14px] leading-[28px] tracking-[0px] text-center">{step.desc}</p>
+                <h3 className="text-white font-poppins font-medium text-[22px] leading-[100%] py-3">
+                  {step.title}
+                </h3>
+                <p className="text-white font-poppins text-[14px] leading-[24px] max-w-[250px]">
+                  {step.desc}
+                </p>
               </div>
             ))}
           </div>

@@ -104,7 +104,7 @@ export default function Industrypage() {
           Industry Insights & Updates
         </h4>
         <div className="px-12">
-           <p className="text-gray-300 mx-auto  mb-8 text-[18px]  leading-[100%] tracking-normal text-center font-poppins">
+           <p className="text-gray-300 mx-auto  mb-8 text-[18px]  leading-[130%] tracking-normal text-center font-poppins">
        Subscribe to learn about new product features, the latest in technology, solutions, and updates.
         </p>
         </div>
@@ -116,7 +116,7 @@ export default function Industrypage() {
             placeholder="Search product name..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full px-4 py-3 rounded-md text-gray-800 outline-none"
+            className="w-full h-[54px] px-4 py-3 rounded-[8px] text-gray-800 outline-none"
           />
           {/* <button className="bg-green-600 hover:bg-green-700 text-white px-5 py-3 rounded-md font-medium transition">
             Search
@@ -127,14 +127,14 @@ export default function Industrypage() {
                 <div className="absolute inset-0 rounded-[16px] bg-gradient-to-t from-green-600 to-transparent"></div>
 
                 <button className="relative z-10 group p-[4px] rounded-[12px] bg-[linear-gradient(180deg,#294C32_0%,#67DF89_100%)] shadow-[0_2px_4px_rgba(0,0,0,0.7)] hover:shadow-[0_4px_8px_rgba(0,0,0,0.6)] active:shadow-[0_0px_1px_rgba(0,0,0,0.8)] active:scale-[0.995] transition-all duration-200">
-                  <div className="bg-transparent rounded-[8px] px-8 py-3 text-center h-[44px] w-[130px]">
+                  <div className="bg-transparent rounded-[8px] px-8 py-3 text-center h-[44px] w-[130px] ">
                     <span className="font-semibold text-white">Submit</span>
                   </div>
                 </button>
               </div>
             </div>
         </div>
-<div className="text-center">
+<div className="text-center lg:mr-40 mr-o">
   <p className=" text-gray-400 text-sm mt-3">
           We care about your data in our{" "}
           <a href="#" className="underline text-gray-300">
@@ -146,7 +146,7 @@ export default function Industrypage() {
         
       </div>
 
-      <div className="p-6 md:p-10 flex flex-col md:flex-row gap-8">
+      <div className="p-6 md:p-2 flex flex-col md:flex-row gap-8">
         <aside className="md:w-1/4 bg-[rgba(10,10,10,1)]/60 backdrop-blur-sm p-5 rounded-2xl h-max border border-blue-900/40">
           <h2 className="text-lg font-semibold mb-4">Filter by</h2>
           <div className="space-y-2">
@@ -171,7 +171,7 @@ export default function Industrypage() {
             {categories.map((cat) => (
               <button
                 key={cat}
-                className=" relative z-10 px-4 py-2 rounded-md bg-[rgba(0,0,0,0.8)]/10 border-2 border-[rgba(84,84,84,1)] hover:bg-blue-500 transition text-sm"
+                className=" relative z-10 px-4 py-2 rounded-[5px] bg-[rgba(0,0,0,0.8)]/10 border-2 border-[rgba(84,84,84,1)]/60 hover:bg-blue-500 transition text-sm"
               >
                 {cat}
               </button>
@@ -183,20 +183,28 @@ export default function Industrypage() {
               filteredCards.map((card) => (
                 <div
                   key={card.id}
-                  className="bg-[#1B263B]/80 border border-blue-900/40 rounded-1 overflow-hidden shadow-md hover:shadow-blue-500/20 transition"
+                  className=" rounded-[10px] border-gray-700/90 rounded-2  overflow-hidden  hover:shadow-blue-500/20 transition"
                 >
-                  <img
+                  {/* <img
                     src={card.img}
                     alt={card.title}
-                    className="w-full h-40 object-cover"
-                  />
-                  <div className="p-4">
-                    <p className="text-sm font-semibold text-green-500">
+                    className="w-full h-52 object-cover rounded-[10px] border-gray-700/90 rounded-2"
+                  /> */}
+                  <img
+  src={card.img}
+  alt={card.title}
+  className="w-full h-52 object-cover rounded-[10px] border-gray-700/90 rounded-2
+             transition-transform duration-300 ease-in-out
+             hover:scale-105 hover:brightness-300 hover:shadow-lg hover:rounded-[10px]"
+/>
+
+                  <div className="p-1 py-8">
+                    <p className="text-sm font-inter font-semibold lg:text-[14px] leading-[20px] tracking-[0%] text-green-500">
                       {card.author} • {card.date}
                     </p>
-                    <h3 className="mt-2    text-[20px]  tracking-[0%]text-[20px] font-semibold leading-[100%] font-thicccboi">
+                    <h4 className="mt-4 font-thicccboi font-semibold text-[20px] leading-[120%] tracking-[0%] racking-[0%]text-[20px]">
                       {card.title}
-                    </h3>
+                    </h4>
                     <p className="text-gray-400 text-sm mt-3 font-[Inter] font-normal lg:text-[16px] leading-[24px] tracking-[0%]">{card.desc}</p>
                   </div>
                 </div>

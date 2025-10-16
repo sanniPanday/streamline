@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import SlickSlider from "react-slick";
 
 import Right from "../../assets/image/r.png";
@@ -15,15 +15,16 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const MSlider = () => {
+  const [slideCount, setSlideCount] = useState(2);
+  const [openIndex, setOpenIndex] = useState(null); 
   const sliderRef = useRef(null);
-  const [openIndex, setOpenIndex] = useState(null);
 
   const settings = {
     infinite: true,
     autoplay: true,
     speed: 800,
     autoplaySpeed: 3000,
-    slidesToShow: 2,
+    slidesToShow: slideCount,
     slidesToScroll: 1,
     arrows: false,
     responsive: [
@@ -32,6 +33,17 @@ const MSlider = () => {
       { breakpoint: 468, settings: { slidesToShow: 1 } },
     ],
   };
+
+  
+  useEffect(() => {
+    const handleResize = () => {
+      setSlideCount(window.innerWidth < 500 ? 1 : 2);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const testimonials = [
     {
@@ -169,45 +181,49 @@ const MSlider = () => {
             Faucibus amet etiam.
           </p>
 
-          <div className="flex justify-end gap-4 mb-6">
-            <img
-              src={Lif}
-              alt="Previous"
-              onClick={() => sliderRef.current.slickPrev()}
-              className="h-12 w-12 cursor-pointer transition"
-            />
-            <img
-              src={Right}
-              alt="Next"
-              onClick={() => sliderRef.current.slickNext()}
-              className="h-12 w-12 cursor-pointer transition"
-            />
-          </div>
+          <div className="hidden sm:flex justify-end gap-4 mb-6">
+                  <img
+                    src={Lif}
+                    alt="Previous"
+                    onClick={() => sliderRef.current.slickPrev()}
+                    className="h-14 w-14 cursor-pointer p-2 bbg-[#10252d]  transition"
+                  />
+                  <img
+                    src={Right}
+                    alt="Next"
+                    onClick={() => sliderRef.current.slickNext()}
+                    className="h-14 w-14 cursor-pointer p-2  transition"
+                  />
+                </div>
 
           <div className="overflow-hidden">
-            <SlickSlider ref={sliderRef} {...settings}>
-              {testimonials.map((t, i) => (
-                <div key={i} className="px-4">
-                  <div className="h-[272px] md:h-[252px] w-full bg-gradient-to-br from-green-900 to-gray-900 rounded-xl p-6 shadow-lg">
-                    <div className="flex items-center mb-6">
-                      <img
-                        src={t.img}
-                        alt={t.name}
-                        className="w-20 h-20 rounded-full border-2 border-green-500 mr-4"
-                      />
-                      <div>
-                        <h3 className="text-lg font-semibold">{t.name}</h3>
-                        <p className="text-sm text-gray-400">{t.position}</p>
-                      </div>
+          <SlickSlider ref={sliderRef} {...settings}>
+            {testimonials.map((t, i) => (
+              <div key={i} className="px-4 ">
+                <div className=" lg:h-[272px] lg:w-[560px] bg-gradient-to-br from-green-900 to-gray-900 rounded-xl p-6 shadow-lg text-center md:text-center lg:text-left mx-auto">
+                  <div className="flex flex-col lg:flex-row items-center lg:items-start mb-6 mt-3 lg:mt-5">
+                    <img
+                      src={t.img}
+                      alt={t.name}
+                      className="w-20 h-20 rounded-full border-2 border-green-500 mb-4 lg:mb-0 lg:mr-4"
+                    />
+                    <div>
+                      <h3 className="text-lg  font-poppins font-medium lg:text-[24px] leading-[100%] tracking-[0px]">
+                        {t.name}
+                      </h3>
+                      <p className="text-sm mt-3 text-gray-400 font-poppins font-normal lg:text-[16px] leading-[100%] tracking-[0%]">
+                        {t.position}
+                      </p>
                     </div>
-                    <p className="text-gray-300 font-light text-base leading-6">
-                      {t.text}
-                    </p>
                   </div>
+                  <p className="text-gray-400  text-base font-poppins font-light text-[16px] leading-[24px] tracking-[0%]">
+                    {t.text}
+                  </p>
                 </div>
-              ))}
-            </SlickSlider>
-          </div>
+              </div>
+            ))}
+          </SlickSlider>
+        </div>
         </div>
       </div>
 

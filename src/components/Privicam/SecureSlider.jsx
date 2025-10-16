@@ -23,12 +23,15 @@ const SecureSlider = () => {
   };
 
   return (
-    <section className="py-16 md:py-24 bg-primary overflow-hidden bg-[linear-gradient(107.56deg,#161616_0%,#2F2F2F_50%,#0A0A0A_100%)] relative">
+    <section className="py-16 md:py-32 bg-primary overflow-hidden bg-[linear-gradient(107.56deg,#161616_0%,#2F2F2F_50%,#0A0A0A_100%)] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-16 relative">
 
-        <h2 className="text-3xl md:text-6xl text-white mb-8 font-bold lg:text-[56px] leading-[100%] tracking-[0%] text-center">
+        {/* <h2 className="text-3xl md:text-6xl text-white mb-8 font-bold lg:text-[56px] leading-[100%] tracking-[0%] text-center">
           A Simple, Secure Experience
-        </h2>
+        </h2> */}
+         <h1 className=" text-white mb-6 text-2xl sm:text-4xl md:text-5xl font-bold lg:text-[56px] leading-[21px]">
+                 A Simple, Secure Experience
+            </h1>
         <p className="text-gray-300 mx-auto mb-12 px-14 font-normal text-[20px] leading-[32px] tracking-[0%] text-center">
           From sign-up to daily use, PriviCam makes protecting your personal media effortless. 
           With clean screens, private access, and built-in security, you’re always in control.
@@ -55,11 +58,11 @@ const SecureSlider = () => {
             className="mySwiper"
           >
             {images.map((img, idx) => (
-              <SwiperSlide key={idx} className="w-4 md:w-80 lg:w-64 flex justify-center">
+              <SwiperSlide key={idx} className="w-4 md:w-80 lg:w-60 flex justify-center">
                 <img
                   src={img}
                   alt={`Slide ${idx}`}
-                  className="w-full h-[500px] object-cover"
+                  className="w-[400px] h-[500px] object-cover"
                 />
               </SwiperSlide>
             ))}

@@ -70,24 +70,17 @@ const WeAre = () => {
       </div>
 
       <div className=" relative z-10  mt-16 mx-auto text-center lg:text-start">
-        <h2 className="text-3xl md:text-3xl lg:text-[48px] mb-4 font-bold leading-[140%] tracking-[0] text-center lg:text-start">
+        <h3 className="text-3xl md:text-3xl lg:text-[48px] mb-4 font-bold leading-[140%] tracking-[0] text-center lg:text-start">
           Our mission - message from founder
-        </h2>
-        {/* <p className=" font-thicccboi font-normal  tracking-[-1.12%] text-gray-300  text-center lg:text-start text-md  lg:text-[24px] leading-[140%] ">
-          At Streamline Factory, we believe complex work should be simple. After
-          years in industries weighed down by inefficiency, we set out to create
-          software that takes the stress out of everyday tasks. Our mission is
-          to give professionals the tools they need to save time, cut through
-          clutter, and focus on what really matters — results.
-        </p> */}
-        {/* <p className="text-gray-300 mt-4  font-thicccboi font-normal text-[18px]">qwcdmhqchch</p> */}
-         <p className="text-gray-300 mt-4  font-thicccboi font-normal text-[16px] sm:text-[18px] leading-[24px] sm:leading-[29px] tracking-[0]">
-             At Streamline Factory, we believe complex work should be simple. After
-          years in industries weighed down by inefficiency, we set out to create
-          software that takes the stress out of everyday tasks. Our mission is
-          to give professionals the tools they need to save time, cut through
-          clutter, and focus on what really matters — results.
-            </p>
+        </h3>
+       <p className="text-gray-300 mt-4 font-thicccboi font-normal text-[16px] lg:text-[18px] leading-[24px] sm:leading-[29px] tracking-[0] ">
+  At Streamline Factory, we believe complex work should be simple. After
+  years in industries weighed down by inefficiency, we set out to create
+  software that takes the stress out of everyday tasks. Our mission is
+  to give professionals the tools they need to save time, cut through
+  clutter, and focus on what really matters — results.
+</p>
+
       </div>
     </section>
   );

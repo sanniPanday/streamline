@@ -38,7 +38,7 @@ const BenefitsSection = () => {
         {benefits.map((item, index) => (
           <div
             key={index}
-            className="w-full max-w-[411px] h-[196px] mx-auto bg-gradient-to-b from-black/40 to-green-900/70 border-2 border-gray-600 rounded-[20px] p-6 shadow-md"
+            className="w-full max-w-[411px] h-[196px] mx-auto bg-gradient-to-b from-black/10 to-green-900/80 border-2 border-gray-600 rounded-[20px] p-6 shadow-md"
           >
             <h3 className="text-xl  mb-4 mt-4 font-poppins font-medium lg:text-[24px] leading-[100%] tracking-[0px] text-center">{item.title}</h3>
             <p className="text-sm px-4 text-white font-poppins font-normal text-[14px] leading-[24px] tracking-[0px] text-center">{item.description}</p>

@@ -44,7 +44,7 @@ const Slider = () => {
 
     window.addEventListener("resize", handleResize);
 
-    // Cleanup the event listener when the component unmounts
+ 
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -79,9 +79,9 @@ const Slider = () => {
       />
 
       <div className="relative max-w-7xl mx-auto z-10">
-        <h2 className="   font-bricolage  lg:text-[56px] leading-[100%] tracking-[0%]text-3xl md:text-4xl font-bold mb-4 text-center md:text-center lg:text-left">
+        <h4 className="lg:text-[56px] leading-[100%] tracking-[0%]text-3xl md:text-4xl font-bold mb-4 text-center md:text-center lg:text-left">
           What Clients say about us
-        </h2>
+        </h4>
         <p className=" font-thicccboi font-normal text-[18px] leading-[26px] tracking-[0%] text-gray-400 mb-10 max-w-2xl mx-auto md:mx-auto lg:mx-0 text-center md:text-center lg:text-left">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc
           ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus
@@ -106,19 +106,19 @@ const Slider = () => {
         <div className="overflow-hidden">
           <SlickSlider ref={sliderRef} {...settings}>
             {testimonials.map((t, i) => (
-              <div key={i} className="px-4 ">
-                <div className=" lg:h-[272px] lg:w-[560px] bg-gradient-to-br from-green-900 to-gray-900 rounded-xl p-6 shadow-lg text-center md:text-center lg:text-left mx-auto">
-                  <div className="flex flex-col lg:flex-row items-center lg:items-start mb-6 mt-3 lg:mt-5">
+              <div key={i} className="px-1  ">
+                <div className="  border-gray-700/90 border-2 lg:h-[272px] lg:w-[570px] xl:w-[570px] bg-gradient-to-br from-green-900 to-gray-900 rounded-[20px] p-6 shadow-lg text-center md:text-center lg:text-left mx-auto">
+                  <div className=" flex flex-col lg:flex-row items-center lg:items-start mb-6 mt-3 lg:mt-5">
                     <img
                       src={t.img}
                       alt={t.name}
-                      className="w-20 h-20 rounded-full border-2 border-green-500 mb-4 lg:mb-0 lg:mr-4"
+                      className="w-24 h-24 rounded-full border-2 border-green-500 mb-4 lg:mb-0 lg:mr-4"
                     />
                     <div>
-                      <h3 className="text-lg  font-poppins font-medium lg:text-[24px] leading-[100%] tracking-[0px]">
+                      <h3 className="text-lg mt-6 font-poppins font-medium lg:text-[24px] leading-[100%] tracking-[0px]">
                         {t.name}
                       </h3>
-                      <p className="text-sm mt-3 text-gray-400 font-poppins font-normal lg:text-[16px] leading-[100%] tracking-[0%]">
+                      <p className="text-sm mt-4 text-gray-400 font-poppins font-normal lg:text-[16px] leading-[100%] tracking-[0%]">
                         {t.position}
                       </p>
                     </div>

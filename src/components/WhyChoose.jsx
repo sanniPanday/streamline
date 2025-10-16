@@ -7,15 +7,16 @@ import bgw from "../assets/image/bg.png";
 
 function WhyChoose() {
   return (
-    <section className="relative py-16 px-6 md:px-12 bg-[#10252d] overflow-hidden">
+    <section className="relative min-h-[600px] py-10 lg:-mt-10 px-6 md:px-16 bg-[#10252d] overflow-hidden">
       <img
         src={bgw}
         alt="background"
         className="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] opacity-45 object-contain z-0"
       />
 
-      <div className="relative max-w-[1440px] mx-auto grid lg:grid-cols-2 gap-12 items-center z-10">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <div className="relative max-w-[1440px] mx-auto grid lg:grid-cols-2 gap-8 items-center z-10">
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full h-auto">
           {[icon1, icon2, icon3, icon4].map((icon, index) => {
             const texts = [
               "Aligned with your business goals",
@@ -26,12 +27,12 @@ function WhyChoose() {
             return (
               <div
                 key={index}
-                className="bg-[linear-gradient(180deg,rgba(0,0,0,0)_0%,rgba(0,0,0,0.8)_100%)] p-6 rounded-2xl flex flex-col items-start gap-4 hover:shadow-xl transition-all duration-300"
+                className="rounded-[20px] w-full h-[216px] border-gray-800 border-2 bg-[linear-gradient(180deg,rgba(0,0,0,0)_0%,rgba(0,0,0,0.8)_100%)] p-6 py-10 flex flex-col items-start gap-4 transition-transform duration-500 hover:scale-105 hover:shadow-2xl group relative overflow-hidden"
               >
                 <img
                   src={icon}
                   alt={texts[index]}
-                  className="h-10 w-10 sm:h-12 sm:w-12"
+                  className="h-10 w-10 sm:h-12 sm:w-12 transition-transform duration-500 group-hover:scale-110"
                 />
                 <p className="text-white text-[18px] leading-[26px] tracking-[0%] font-normal">
                   {texts[index]}

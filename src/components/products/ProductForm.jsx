@@ -33,19 +33,19 @@ const productForm = () => {
               <input
                 type="text"
                 placeholder="Name"
-                className="w-full md:w-1/2 p-3 rounded bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400"
+                className="w-full md:w-1/2 p-3 rounded-[8px] bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400"
               />
               <input
                 type="email"
                 placeholder="Email address"
-                className="w-full md:w-1/2 p-3 rounded bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400"
+                className="w-full md:w-1/2 p-3 rounded-[8px] bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400"
               />
             </div>
 
             <textarea
               rows="5"
               placeholder="Type your message..."
-              className="w-full p-3 rounded bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400"
+              className="w-full p-3 rounded-[8px] bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400"
             ></textarea>
 
             <div className="flex justify-center lg:justify-end">

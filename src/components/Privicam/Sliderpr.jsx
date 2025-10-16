@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import SlickSlider from "react-slick";
 
 import Right from "../../assets/image/r.png";
@@ -9,14 +9,15 @@ import sider1 from "../../assets/image/image 2.png";
 import sider2 from "../../assets/image/sid1.jpg";
 import sider3 from "../../assets/image/sid2.jpg";
 
-import phoneImg from "../../assets/image/ast3.png"; 
-import googlePlay from "../../assets/image/ast1.png"; 
-import appStore from "../../assets/image/ast2.png"; 
+import phoneImg from "../../assets/image/ast3.png";
+import googlePlay from "../../assets/image/ast1.png";
+import appStore from "../../assets/image/ast2.png";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const Sliderpr = () => {
+  const [slideCount, setSlideCount] = useState(2);
   const sliderRef = useRef(null);
 
   const settings = {
@@ -24,7 +25,7 @@ const Sliderpr = () => {
     autoplay: true,
     speed: 800,
     autoplaySpeed: 3000,
-    slidesToShow: 2,
+    slidesToShow: slideCount,
     slidesToScroll: 1,
     arrows: false,
     responsive: [
@@ -34,24 +35,44 @@ const Sliderpr = () => {
     ],
   };
 
+ 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 500) {
+        setSlideCount(1);
+      } else {
+        setSlideCount(2);
+      }
+    };
+
+    
+    handleResize();
+
+   
+    window.addEventListener("resize", handleResize);
+
+    
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const testimonials = [
     {
       img: sider1,
       name: "Client 1",
       position: "CEO, Company",
-      text: "Faucibus amet etiam tincidunt rhoncus, ullamcorper velit.",
+      text: "Finally, I can store personal photos without worrying about them syncing to the cloud. PriviCam is exactly what I needed.",
     },
     {
       img: sider2,
-      name: "Client 2",
-      position: "Marketing Head",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      name: "Jocelyn Septimus",
+      position: "CEO, Company",
+      text: "I love how simple it is. Quick pin login and all my files stay private. I won’t use anything else.",
     },
     {
       img: sider3,
       name: "Client 3",
-      position: "Product Manager",
-      text: "Est tellus vitae, nullam lobortis enim. Faucibus amet etiam.",
+      position: "CEO, Company",
+      text: "Est tellus vitae, nullam lobortis enim. Faucibus amet etiaI love how simple it is. Quick pin login and all my files stay private. I won’t use anything else.",
     },
   ];
 
@@ -65,16 +86,16 @@ const Sliderpr = () => {
 
       <div className="relative max-w-7xl mx-auto z-10">
         
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        <h2 className="text-2xl text-center lg:text-start md:text-4xl font-bold mb-4">
           What Our Users Say
         </h2>
-        <p className="text-gray-400 mb-10 max-w-2xl">
+        <p className="text-gray-400 text-center lg:text-start mb-10 max-w-xl  font-normal text-[18px] leading-[26px] tracking-[0]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc
           ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus
           amet etiam.
         </p>
 
-        <div className="flex justify-end gap-4 mb-6">
+        <div className="hidden md:flex justify-end gap-4 mb-6">
           <img
             src={Lif}
             alt="Previous"
@@ -93,7 +114,7 @@ const Sliderpr = () => {
           <SlickSlider ref={sliderRef} {...settings}>
             {testimonials.map((t, i) => (
               <div key={i} className="px-4">
-                <div className="h-[272px] md:h-[252px] w-full bg-gradient-to-br from-green-900 to-gray-900 rounded-xl p-6 shadow-lg">
+                <div className="h-[272px] md:h-[252px] w-full bg-gradient-to-br from-green-900 to-gray-900 rounded-[20px] border-2 border-gray-700/90 p-6 shadow-lg">
                   <div className="flex items-center mb-6">
                     <img
                       src={t.img}
@@ -114,9 +135,9 @@ const Sliderpr = () => {
           </SlickSlider>
         </div>
 
-        <section className="relative w-full bg-gradient-to-r from-[#0f1c24] to-[#112630] text-white py-16 px-6 md:px-16 mt-20 flex flex-col md:flex-row items-center justify-between rounded-lg">
+        <div className="relative w-full h-[690px] md:h-[400px] lg:h-[439px]  bg-gradient-to-r from-[#0f1c24] to-[#112630] text-white py-16 px-6 md:px-0 mt-20 flex flex-col md:flex-row items-center justify-between rounded-[20px] border-2 border-gray-700/90">
           
-          <div className="max-w-xl text-center md:text-left">
+          {/* <div className=" text-center md:text-left">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Download PriviCam Today
             </h2>
@@ -129,16 +150,31 @@ const Sliderpr = () => {
               <img src={googlePlay} alt="Google Play" className="h-12 cursor-pointer" />
               <img src={appStore} alt="App Store" className="h-12 cursor-pointer" />
             </div>
-          </div>
+          </div> */}
+<div className="text-center md:text-left ml-10 lg:ml-20">
+  <h2 className="text-3xl md:text-4xl font-bold mb-4">
+    Download PriviCam Today
+  </h2>
 
-          <div className="mt-10 md:mt-0">
+  <p className="text-gray-300 mb-10 text-sm md:text-[18px] leading-relaxed">
+    Take control of your photos and videos with secure storage that’s built for privacy.
+    Download now and protect your memories the easy way.
+  </p>
+
+  <div className="flex flex-wrap gap-4 justify-center md:justify-start">
+    <img src={googlePlay} alt="Google Play" className="h-12 cursor-pointer" />
+    <img src={appStore} alt="App Store" className="h-12 cursor-pointer" />
+  </div>
+</div>
+
+          <div className="mt-10 md:mt-0  flex justify-end ">
             <img 
               src={phoneImg} 
               alt="PriviCam App" 
-              className="max-h-96 w-auto  drop-shadow-xl"
+              className="h-[250px]  sm:w-[200px] md:w-[400px] lg:h-[380px] w-[200px]  drop-shadow-xl"
             />
           </div>
-        </section>
+        </div>
 
       </div>
     </div>
