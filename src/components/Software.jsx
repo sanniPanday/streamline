@@ -123,7 +123,7 @@ function Software() {
                 </p>
               </div>
               <div className="text-white font-semibold font-poppins text-[24px] leading-[100%] tracking-[0%]">
-                Coming soon...
+                Coming soon again...
               </div>
             </div>
           </div>
